@@ -21,6 +21,8 @@ I googled B*C*N**N and found http://www.bbc.co.uk/dna/h2g2/A9837183
 
 Then I made this php script:
 ```php
+<?php
+
 $x = array('aaaaa', 'aaaab', 'aaaba', 'aaabb', 'aabaa', 'aabab', 'aabba', 'aabbb', 'abaaa', 
            'abaaa', 'abaab', 'ababa', 'ababb', 'abbaa', 'abbab', 'abbba', 'abbbb', 'baaaa', 
            'baaab', 'baaba', 'baabb', 'baabb', 'babaa', 'babab', 'babba', 'babbb');
@@ -34,4 +36,6 @@ $s .= "url:babab aabab abaab abbab aabbb aaaba";
 $s = str_replace($x, $y, $s);
 $s = str_replace(' ', '', $s);
 print $s;
+
+?>
 ```

@@ -7,6 +7,8 @@ When the server is happy it gives you the URL to level 8.
 
 This is the php script I made:
 ```php
+<?php
+
 if (!$socket = fsockopen('try2hack.nl', 80, $errno, $errstr, 20)) {
     print $errno . "-" . $errstr;
 } 
@@ -22,4 +24,6 @@ else {
     }
     fclose($socket);
 }
+
+?>
 ```

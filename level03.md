@@ -23,7 +23,7 @@ The Javascript you will find is:
 Nevermind that Javascript you see there, it's fake, but check out that external Javascript that is camouflaged right over it: 
 
 ```html
-&lt;script src="JavaScript"&gt;&lt;/script&gt;
+<script src="JavaScript"></script>
 ```
 
 Lets check it out: view-source:http://try2hack.nl/levels/JavaScript

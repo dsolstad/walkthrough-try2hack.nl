@@ -1,7 +1,7 @@
 #### Level 4
 
 As you see in the source, the file you need to check out is http://try2hack.nl/levels/PasswdLevel4.class
-Get a Java decompiler, I recommend Cavaj which you may find here: http://www.bysoft.se/sureshot/cavaj
+Get a Java decompiler. I recommend Cavaj, which you may find here: http://www.bysoft.se/sureshot/cavaj
 Use Cavaj to decompile the class and check out the source:
 
 ```java

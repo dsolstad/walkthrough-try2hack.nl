@@ -2,6 +2,8 @@
 
 This PHP script seemed to work nice:
 ```php
+<?php
+
 $url = "http://www.try2hack.nl/levels/level11-vmituh.xhtml";
 $html = file_get_contents($url);
 $x = 1;
@@ -24,6 +26,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, 'answer=' . $postvalue . '&submit=click her
 $response = curl_exec($ch);
 curl_close($ch);
 print preg_replace('/.*?&lt;!-- content --&gt;\s+(.*?.)?&lt;b.*href="(\S+)".*/s', '$1 Next level: $2', $response) . "\n";
+
+?>
 ```
 
 ```

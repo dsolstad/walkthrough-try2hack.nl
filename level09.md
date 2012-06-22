@@ -9,6 +9,8 @@ Set-Cookie: auth=no
 ```
 Sending a POST request with the login-data and setting the cookie auth to 'yes' seemed to do the trick:
 ```php
+<?php
+
 if (!$socket = fsockopen('try2hack.nl', 80, $errno, $errstr, 20)) {
     print $errno . "-" . $errstr . "\n";
 } 
@@ -26,4 +28,6 @@ else {
     }
     fclose($socket);
 }
+
+?>
 ```
