@@ -1,1 +1,1 @@
-![Alt text](/try2hack_files/level11.jpg)
+![Alt text](try2hack_files/level11.jpg)
