@@ -1,1 +1,1 @@
-![Alt text](https://github.com/dsolstad/walkthrough-try2hack.nl/blob/master/try2hack_files/level11.jpg)
+![Alt text](try2hack_files/level11.jpg)
