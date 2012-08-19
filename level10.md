@@ -56,7 +56,6 @@ Worked:
 ```
 
 I changed the password for the bot to '123456' by doing `/msg LEVEL10-xxx pass 123456`
-```
 
 ```
 [notice(LEVEL10-605)] PING [adduser asdf *!qwer@*]
