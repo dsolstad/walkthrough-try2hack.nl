@@ -43,9 +43,8 @@ except NameError:
 # 2011.11.06 20:27:44 CET
 ```
 
-We don't need to find the username actually, but I'll show you at the end.
-
-I wrote this Javascript to get the valid passwords (Yes, plural):
+The first three digits of the password, creates the rest of the password. So basicaly you create your own password.
+I wrote this JavaScript to get the valid passwords:
 ```Javascript
 var i = 0;
 while(i <= 999) {
