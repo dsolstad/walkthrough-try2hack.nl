@@ -85,3 +85,5 @@ Then start a dcc chat with the bot `/dcc chat LEVEL10-xxx`, then the bot will ms
 <LEVEL10-605> You've been booted from the bot by LEVEL10-0
 -!- Irssi: Closing query with =LEVEL10-605
 ```
+
+If this doesn't work, then open ports 3713 to 3723, go around your routher or figure out something else.
