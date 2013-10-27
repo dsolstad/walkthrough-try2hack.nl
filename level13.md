@@ -1,3 +1,5 @@
+#### Level 13
+
 I used the Linux distro Kali to solve this challenge, but any distro will do. If your distro doesn't have the tools used in this guide, just install the sleuthkit package. 
 On Ubuntu/Debian systems: `sudo apt-get install sleuthkit`
 
@@ -51,8 +53,8 @@ H[C\F_
 d_\n
 HTwN
 >\5e}
-root@kali:~# 
-```
+root@kali:~#```
+
 
 Nothing interesting in the source. Viewing it in a image viewer just shows the try2hack logo.
 Let's go deeper into the filesystem...
@@ -117,7 +119,7 @@ Now we know that the /home/lamer directory is refered to by the inode 11810.
 
 We can use the tool "istat" to find the data blocks for that inode:
 
-``` root@kali:~# istat -f ext level13 11810
+```root@kali:~# istat -f ext level13 11810
 inode: 11810
 Allocated
 Group: 6
@@ -134,7 +136,7 @@ Inode Modified:	Sat Jul 13 14:43:52 2013
 
 Direct Blocks:
 51713 
-root@kali:~# ``` 
+root@kali:~#``` 
 
 With the tool "dd", we can see the contents of the data block.
 
@@ -148,7 +150,7 @@ tlk-0.8-3.pdf
 .password_part1.txt
 .password_part2.txt
 1024 bytes (1.0 kB) copied, 3.0092e-05 s, 34.0 MB/s
-root@kali:~# ```
+root@kali:~#```
 
 Well, look at that. .password_part2.txt is also showing now, but let's first focus on the part3 gif file.
 
