@@ -19,7 +19,7 @@ root@kali:~# mkdir /media/level13
 root@kali:~# mount level13 /media/level13
 ```
 
-Let's take a look what's inside.
+Let's take a look at what's inside.
 
 ```bash
 root@kali:~# ls /media/level13/
@@ -69,11 +69,9 @@ HTwN
 root@kali:~#
 ```
 
+Nothing interesting in the source. Viewing it in a image viewer just shows the try2hack logo. Let's go deeper into the filesystem...
 
-Nothing interesting in the source. Viewing it in a image viewer just shows the try2hack logo.
-Let's go deeper into the filesystem...
-
-The ext filesystem has inodes that holds metadata of files. We can browse the filesystem, by going to an inode which tells us in what data block the file or directory is located at. It will make much more sense when we start.
+The ext filesystem has inodes that holds metadata of files. We can browse the filesystem by going to inodes and get information om which data blocks the file or directory is located at. It will make much more sense when we start.
 
 First we find the block size.
 
