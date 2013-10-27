@@ -43,7 +43,6 @@ except NameError:
 # 2011.11.06 20:27:44 CET
 ```
 
-<<<<<<< HEAD
 What the program does is that you actually create your own password based on what you begin to type in. Sounds weired, but it's true.
 There are many valid passwords, but they need to fulfil the algorithm.
 
@@ -52,7 +51,7 @@ I wrote this Javascript to get all the passwords. You may open the javascript co
 =======
 The first three digits of the password, creates the rest of the password. So basicaly you create your own password.
 I wrote this JavaScript to get the valid passwords:
->>>>>>> c01d4e4d4bdc741299a37a40551c1de794ffb59a
+
 ```Javascript
 var i = 0;
 while(i <= 999) {
