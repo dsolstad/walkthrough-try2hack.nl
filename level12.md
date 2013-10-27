@@ -43,9 +43,11 @@ except NameError:
 # 2011.11.06 20:27:44 CET
 ```
 
-We don't need to find the username actually, but I'll show you at the end.
+What the program does is that you actually create your own password based on what you begin to type in. Sounds weired, but it's true.
+There are many valid passwords, but they need to fulfil the algorithm.
 
-I wrote this Javascript to get the valid passwords (Yes, plural):
+I wrote this Javascript to get all the passwords. You may open the javascript console in your web browser and paste in the code. You will see a whole bunch of valid passwords, but it's just one password that makes any sense, which is "648tryharder".
+
 ```Javascript
 var i = 0;
 while(i <= 999) {
@@ -65,15 +67,13 @@ while(i <= 999) {
 }
 ```
 
-If you run the script in your browser, then you will see a whole bunch of valid passwords, but it's just one password that makes any sense, which is "648tryharder".
-
-Now let's see what that username is:
+Now for the username, which is based on the password:
 ```Javascript
 var pw = "tryharder";
 document.write("3e3a378c63aa1"+pw.substring(7,8)+"55e3e9"+pw.substring(4,5)+"e9d2bdcd6a1");
 ```
 
-Let's try google on that hash...
-e3a378c63aa1e55e3e9ae9d2bdcd6a1 => lamer
+Let's try Google on that hash...
+First hit gave me the answer: 3e3a378c63aa1e55e3e9ae9d2bdcd6a1 => lamer
 
 Success!

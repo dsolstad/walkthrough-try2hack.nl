@@ -39,3 +39,9 @@ print $s;
 
 ?>
 ```
+
+The result:
+
+Username:dabomb
+Password:encryptionrawks
+url:xfkohc
