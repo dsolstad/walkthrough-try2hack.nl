@@ -53,7 +53,7 @@ root@kali:~#
 
 There we have the first part. Now what's in .password.part3.gif?
 
-We pipe the result to the tool "string" to filter out the noise.
+We pipe the result to the tool "strings" to filter out the noise.
 
 ```bash
 root@kali:~# cat /media/level13/home/lamer/.password_part3.gif | strings
@@ -73,9 +73,9 @@ root@kali:~#
 Nothing interesting in the source. Viewing it in a image viewer just shows the try2hack logo.
 Let's go deeper into the filesystem...
 
-The ext filesystem has inodes that holds metadata of files. We can browse the filesystem by going to an inode which tells us in what data block the file or directory is located at. It will make much more sense when we start.
+The ext filesystem has inodes that holds metadata of files. We can browse the filesystem, by going to an inode which tells us in what data block the file or directory is located at. It will make much more sense when we start.
 
-First we find out the block size.
+First we find the block size.
 
 ```bash
 root@kali:~# fsstat -f ext level13 
@@ -273,9 +273,7 @@ r/r * 11997:	home/lamer/.password_part2.txt
 root@kali:~#
 ``` 
 
-There we have the file we are after and I know of a good tool to retrieve deleted files.
-
-Download and install it with: `root@kali:~# apt-get install ext3grep`
+There we have the file we are after. "ext3grep" is a good tool to retrieve deleted files. Download and install it with: `root@kali:~# apt-get install ext3grep`
 
 Then we run the command: `root@kali:~# ext3grep level13 --restore-all`
 
@@ -289,8 +287,4 @@ root@kali:~#
 
 There we have the second part of the password.
 
-Together all the parts form: `f1ff950850ac2f1f51fa82d839f0bd1b`, which looks like a md5 hash, but it is indeed is the correct password.
-
-
-
-
+Together all the parts form: `f1ff950850ac2f1f51fa82d839f0bd1b`, which looks like a md5 hash, but it is indeed the correct password.
