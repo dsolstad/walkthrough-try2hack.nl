@@ -1,6 +1,11 @@
 #### Level 10
 
-After you have done level 9 you get an IRC channel name and password. After joining you receive a binary welcome message.
+After you have done level 9 you get an IRC channel name and password. 
+```
+Good job! You can find Level 10 at our IRC channels. Go to #try2hack.level10 on irc.efnet.org and use 'yu0aertehbomb' as key to continue. See the <a href="../chat/">chat</a> page for more information.
+```
+
+After joining you receive a binary welcome message.
 ```
 0100111001101001011000110110010100100000011010100
 110111101100010001011100010000001001110011011110111011100100000011101000111100101110000011001010010000
