@@ -48,11 +48,11 @@ proc ctcr:pingreply {nick uhost hand dest key arg} {
     putserv "NOTICE $nick :Your ping reply took $dur seconds"}
 ```
 After almost 24 hours, x number cups of coffee, trying and failing, hours googling and reading on eggdrop I finally made it!
-The argument sent with the ping are in most irc clients a timestamp, but you can send what you want.
-The bot lacks of security, it doesn't check $arg for bad code. Time to exploit.
+The argument sent with the ping are in most IRC clients a timestamp, but you can send what you want.
+The bot lacks of security, because it doesn't check $arg for bad code. Time to exploit.
 
 I tried sending raw data with the /quote command but that didn't work.
-I then come across the /nctcp command in Irssi (/ctcpreply for mIRC) which I noticed sent some stuff along with the data that seemed to make a diffrence. I think it was some UTF \x00\x01 thing.
+I then come across the /nctcp command in Irssi (/ctcpreply for mIRC) which I noticed sent some stuff along with the data that seemed to make a difference. I think it was some UTF \x00\x01 thing.
 
 Worked:
 ```
@@ -71,7 +71,7 @@ I changed the password for the bot to '123456' by doing `/msg LEVEL10-xxx pass 1
 -LEVEL10-605(try2hack@try2hack.bot) - Password changed to '123456'
 ```
 
-Then start a dcc chat with the bot `/dcc chat LEVEL10-xxx`, then the bot will msg you with the URL to level 11, along with this:
+Then start a DCC chat with the bot `/dcc chat LEVEL10-xxx`. The bot will msg you with the URL to level 11, along with this:
 
 ```
 <LEVEL10-605> Enter your password.
