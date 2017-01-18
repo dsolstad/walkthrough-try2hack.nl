@@ -40,7 +40,6 @@ except NameError:
     print "Wrong username and/or password"
 +++ okay decompyling level12.pyc 
 # decompiled 1 files: 1 okay, 0 failed, 0 verify failed
-# 2011.11.06 20:27:44 CET
 ```
 
 What the code does is that you actually create your own password based on what you start to type in.
