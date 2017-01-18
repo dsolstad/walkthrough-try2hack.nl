@@ -2,10 +2,10 @@
 
 After I figured out that this level was broken, it was quite easy. The server first require that you use IE 7.66.
 I made a php script which sends a HTTP request where I set the user-agent to meet the requirements.
-Then the server complains about not using Unix or Linux, and so it wants you to be refered from a microsoft site.
+Then the server complains about not using Unix or Linux, and then it wants you to be refered from a Microsoft site.
 When the server is happy it gives you the URL to level 8.
 
-This is the php script I made:
+This PHP script did the job:
 ```php
 <?php
 
