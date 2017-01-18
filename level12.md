@@ -10,7 +10,7 @@ Open a terminal and cd into the folder and run:
 Then run the binary on the .pyc file: `uncompyle2 level12.pyc`
 
 The result is this:
-```
+```python
 # 2011.11.06 20:27:44 CET
 from md5 import new
 
@@ -43,14 +43,10 @@ except NameError:
 # 2011.11.06 20:27:44 CET
 ```
 
-What the program does is that you actually create your own password based on what you begin to type in. Sounds weired, but it's true.
-There are many valid passwords, but they need to fulfil the algorithm.
+What the code does is that you actually create your own password based on what you start to type in.
+There are many valid passwords, but they need to comply with the algorithm.
 
-I wrote this Javascript to get all the passwords. You may open the javascript console in your web browser and paste in the code. You will see a whole bunch of valid passwords, but it's just one password that makes any sense, which is "648tryharder".
-
-=======
-The first three digits of the password, creates the rest of the password. So basicaly you create your own password.
-I wrote this JavaScript to get the valid passwords:
+This Javascript gets all the passwords. You can run it from the Javascript console in your web browser.
 
 ```Javascript
 var i = 0;
@@ -70,6 +66,9 @@ while(i <= 999) {
     i++;
 }
 ```
+
+The first three digits of the password creates the rest of the password, which basically means that you create your own password.
+You will see a whole bunch of valid passwords, but it's just one password that makes any sense, which is "648tryharder".
 
 Now for the username, which is based on the password:
 ```Javascript
