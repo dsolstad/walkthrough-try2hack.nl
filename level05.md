@@ -1,7 +1,9 @@
 #### Level 5
 
 Download the file zip-file and extract it.
+
 Download vbrun300.dll from http://www.dll-files.com/dllindex/dll-files.shtml?vbrun300 and place it in the same folder as LEVEL5.EXE
+
 Get the Dodi VB decompiler from http://vbdis4.angelfire.com
 
 Now try to open LEVEL5.EXE, you will probably get some errors, but that's OK. Now you will find some new files in you level5 folder.
@@ -34,8 +36,8 @@ End If
 ```
 
 You should see that the username and password are made from the constant gc0006 in main.txt (don't get fooled by gc000A).
-The 2. parameter in Mid() is the position of the character in gc0006.
-I made a JavaScript to print out the username, password and the url to level6:
+The 2nd parameter in Mid() is the position of the character in gc0006.
+I made a JavaScript to print out the username, password and the URL to level6:
 ```javascript
 var a = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,:;-*+=~|&!_$#@()[]{}<\/>";
 var b = "http://www.try2hack.nl/levels/level6-ksghvb.xhtml"
