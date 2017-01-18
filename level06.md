@@ -1,7 +1,8 @@
 #### Level 6
 
-Download and install Wireshark (you will find it easily on google) or any other packet sniffer. Start capturing.
-Now open LEVEL6.EXE and type a random username and password. Now you will se that you got some packages in Wireshark.
+Download and install Wireshark or any other packet sniffer. Start capturing.
+
+Now open LEVEL6.EXE and type a random username and password. You will se that you got some packages in Wireshark.
 One of them contain this data:
 ```
 (ENCRYPTION TYPE)
