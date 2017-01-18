@@ -1,8 +1,7 @@
 #### Level 3
 
 You will get an annoying prompt that disables you to view the source with right click and ctrl+u.
-Just click on it and stop the browser before you get transfered to disneyland!
-View the source directly with: view-source:http://try2hack.nl/levels/level3-.xhtml 
+Just view the source directly by writing this in the address bar: view-source:http://try2hack.nl/levels/level3-.xhtml 
 
 The Javascript you will find is:
 ```javascript
@@ -20,7 +19,7 @@ CORRECTSITE="level4-sfvfxc.xhtml";
 WRONGSITE="http://www.disney.com";
 ```
 
-Nevermind that Javascript you see there, it's fake, but check out that external Javascript that is camouflaged right over it: 
+Nevermind that Javascript you see there. It's fake, but check out that external Javascript that is camouflaged right over it: 
 
 ```html
 <script src="JavaScript"></script>
