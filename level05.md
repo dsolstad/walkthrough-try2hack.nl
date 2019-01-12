@@ -50,7 +50,7 @@ document.write("Password: " +
                 a.substring(14,15) + a.substring(39,40) + a.substring(24,25) + a.substring(13,14) + 
                 a.substring(18,19) + "\n");
 document.write("Level 6 can be found at: "+ 
-                b.substring(36,37) + a.substring(20,21) + a.substring(13,14) + a.substring(28,29) + 
-                a.substring(31,32) + a.substring(11,12) + a.substring(13,14) + b.substring(43,44) + 
+                b.substring(0,37) + a.substring(20,21) + a.substring(13,14) + a.substring(28,29) + 
+                a.substring(31,32) + a.substring(11,12) + a.substring(13,14) + b.substring(43,50) + 
                 " Horray!");
 ```
